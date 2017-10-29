@@ -15,5 +15,7 @@ int main() {
 		}
 	}
 	printf("%s\n", s);
+	while ( getchar() != '\n' );
+    	getchar();
 	return 0;
 }
