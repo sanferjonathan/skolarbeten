@@ -7,7 +7,7 @@ int main(){
   _Bool b = true;
 
   printf("Ange ett tal: ");
-  scanf("%d\n", &n);
+  scanf("%d", &n);
 
   for(int i = 2; i <= n; i++){
     for(int j = 2; j < i; j++){
@@ -22,5 +22,7 @@ int main(){
       b = true;
     }
   }
+  while ( getchar() != '\n' );
+    getchar();
   return 0;
 }
