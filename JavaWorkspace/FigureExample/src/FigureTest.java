@@ -12,17 +12,11 @@ public class FigureTest {
 
 			// clean the following code into more readable forms
 			// using polymorphism (use printOut)
-
-			if (figs[index] instanceof Circle) {
-				System.out.println("Circle:");
-				System.out.println("   Diameter: " + ((Circle) figs[index]).diameter());
-			} else {
-			    System.out.println("Rectangle:");
-			}
-			System.out.println("   Highest x: " + figs[index].maxX());
-			System.out.println("   Highest y: " + figs[index].maxY());
-			System.out.println("   Area: " + figs[index].area());
-			System.out.println("   Perimeter: " + figs[index].perimeter());
+			System.out.println(figs[index].getTitle());
+			//if (figs[index] instanceof Circle) {
+				//System.out.println("   Diameter: " + ((Circle) figs[index]).diameter());
+			//} 
+			figs[index].printOut();
 		}
 	}
 
